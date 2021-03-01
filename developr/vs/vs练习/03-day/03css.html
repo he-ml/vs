@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性布局</title>
+    <style>
+        .box {
+            width: 98%;
+            margin: auto;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menuBox {
+            display: flex;
+            flex-direction: row;
+            /*里面元素排列是水平方向*/
+            width: 100%;
+            height: 30px;
+            justify-content: space-between;
+
+
+        }
+
+        .logo {
+
+            width: 20%;
+            height: 120px;
+        }
+
+        .menuLeft {
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+        }
+
+        .menuRight {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .item {
+            margin-left: 30px;
+            font-size: 13px;
+            color: #222222;
+        }
+
+        .inputBox {
+            display: flex;
+            /*设置为弹性布局*/
+            flex-direction: row;
+            /*水平方向*/
+            width: 45%;
+            height: 60px;
+
+        }
+
+        .input {
+            width: 85%;
+        }
+
+        .button {
+            background: #4e6ef2;
+            width: 15%;
+            height: 60px;
+            line-height: 60px;
+            color: #ffffff;
+            text-align: center;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .hx {
+            display: flex;
+            flex-direction: row;
+            height: 100px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="menuBox">
+            <div class="menuLeft">
+                <p class="item">新闻</p>
+                <p class="item">hao123</p>
+                <p class="item">地图</p>
+                <p class="item">直播</p>
+                <p class="item">视频</p>
+                <p class="item">贴吧</p>
+                <p class="item">学术</p>
+                <p class="item">更多</p>
+            </div>
+            <div class="menuRight">
+                <p class="item">成都</p>
+                <p class="item">设置</p>
+            </div>
+        </div>
+        <img class="logo" src="https://www.baidu.com/img/dong_8f1d47bcb77d74a1e029d8cbb3b33854.gif" />
+        <div class="inputBox">
+            <input class="input" />
+            <div class="button">
+                百度一下
+            </div>
+        </div>
+    </div>
+    </div>

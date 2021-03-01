@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 90%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .menuBox {
+        width: 100%;
+        height: 30px;
+        justify-content: space-between;
+        display: flex;
+
+    }
+
+    .menuleft {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .menuright {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+    .itmeseftl {
+        margin-left: 20px;
+        font-size: 13px;
+        color: black;
+    }
+
+
+    .logo {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .tpbox {
+        display: flex;
+        height: 200px;
+        justify-items: center;
+        margin-top: 60px;
+        
+
+
+
+    }
+
+    .zi {
+        font-size: 40px;
+        
+    }
+
+    .inputbox {
+        display: flex;
+        /*设置为弹性布局 */
+        flex-direction: row;
+        /*水平方向*/
+        width: 45%;
+        height: 60px;
+    }
+
+    .input {
+        width: 989px;
+        height: 42px;
+    }
+
+
+
+
+    .button {
+        color:black;
+        background-color:gray;
+        font-size: 20px;
+        width: 300px;
+        height: 49px;
+        text-align: center;
+        line-height: 49px;
+        border-top-right-radius: 29px;
+        border-bottom-right-radius: 29px;
+        
+
+    
+
+    }
+</style>
+<!--.box 是大盒子 width height 是盒子的大小尺寸
+display flex 是弹性布局
+flex-direction 是排列顺序从左到右row
+align-items 是主体排列方式 居中
+margin 间距
+line-height 让字体在按钮内居中输入height的高度
+每个盒子最外面的盒子要写清楚高度 宽度 样式 居中 向右 向左
+盒子内的其他盒子也会是一样的 上面居中就会居中 不用再次定义它的宽度
+在第一个字符后面 直接加class 定义它的属性
+-->
+
+<body>
+    <div class="box">
+
+        <div class="menuBox">
+
+            <div class="menuleft">
+                <p class="itmeseftl">网页</p>
+                <p class="itmeseftl">微信</p>
+                <p class="itmeseftl">知乎</p>
+                <p class="itmeseftl">图片</p>
+                <p class="itmeseftl">视频</p>
+                <p class="itmeseftl">明医</p>
+                <p class="itmeseftl">科学</p>
+                <p class="itmeseftl">汉语</p>
+                <p class="itmeseftl">英文</p>
+                <p class="itmeseftl">问问</p>
+                <p class="itmeseftl">学术</p>
+                <p class="itmeseftl">更多</p>
+
+            </div>
+
+            <div class="menuright">
+                <p class="itmeseftl">成都</p>
+                <p class="itmeseftl">登录</p>
+
+            </div>
+
+        </div>
+        <div class="tpbox">
+            <img class="logo" src="../3.png" />
+            <p class="zi">搜狗搜索</p>
+        </div>
+        <div class="inputbox">
+            <input class="input"/>
+            <div class="button">
+                搜狗搜索
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

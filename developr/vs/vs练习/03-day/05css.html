@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 100%;
+        height: 700px;
+       
+        margin: auto;
+    }
+
+    .head {
+        width: 100%;
+        height: 70px;
+        background-color: #eff4fa;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom-color: #d6dfea;
+        border-bottom-width: 1px;
+        border-top-width: 1px;
+        border-top-color: #d6dfea;
+        border-style: solid;
+
+    }
+
+    /* 这里调节盒子的边框 内容位置 方向 排列方式*/
+
+    .logo {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .rightbox {
+        display: flex;
+        flex-direction: row;
+        margin-right: 40px;
+        /*这里是调节字的间距*/
+    }
+
+    .right {
+        margin-right: 5px;
+        /* 字体中间的调节*/
+        ;
+        color: #1d5494;
+        font-size: 16px;
+    }
+
+    .neirou {
+        width: 100%;
+        height: 700px;
+      
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .wenzi {
+        width: 40%;
+        height: 500px;
+      
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        /*调整字体位置 弹性布局*/
+
+
+    }
+
+    .bt {
+        font-size: 30px;
+        margin-right: 10px;
+        color:#6f95c8 ;
+
+    }
+    .shi {
+        margin-right: 95px;
+        margin-top: 12px;
+    }
+
+    .tupian {
+        width: 20%;
+        height: 500px;
+      
+        margin-top: 80px;
+
+    }
+
+    .denglu {
+        width: 300px;
+        height: 200px;
+      
+        border-width:10px;
+       
+        margin-top: 100px;
+        margin-left: 150px;
+    
+        
+    }
+    .hezi {
+        width: 300px;
+        height: 340px;
+      
+        border: slategray solid 1px;/* 要给边框加属性 实心线 虚线之类的*/
+        border-radius: 20px;
+      
+        
+        
+    }
+    .weixinqq {
+        width: 300px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: royalblue;
+        align-items: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+       
+
+    }
+    .zi {
+        font-size: 19px;
+        margin-right: 25PX;
+        color: white;
+    }
+    .zi1 {
+        margin-left: 25px;
+        font-size: 19px;
+        color: white;
+    }
+    .sr1 {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .sr {
+        width: 250px;
+        height: 30px;
+        margin-top: 10px;
+    }
+.sr3 {
+    width: 6px;
+    height: 8px;
+}
+.zd {
+    font-size: 6px;
+    margin-left: 40px;
+    margin-top: 30px;
+    color: royalblue;
+}
+.my-button {
+    width: 250px;
+    height: 30px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: royalblue;
+    margin-left: 25px;
+    color: white;
+
+    
+}
+.sm {
+    font-size: 16px;
+    color: royalblue;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.zh {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 6px;
+    color: royalblue;
+}
+
+    
+
+    
+
+</style>
+
+<body>
+    <div class="box">
+        <div class="head">
+            <div><img class="logo"
+                    src="https://rescdn.qqmail.com/zh_CN/htmledition/images/logo/qqmail/qqmail_logo_default_35h206ff1.png" />
+            </div>
+
+
+            <div class="rightbox">
+
+
+                <div>
+                    <a class="right" href="https://w.mail.qq.com/cgi-bin/loginpage?f=xhtml">基本版</a>
+                    <a class="right" href="https://en.mail.qq.com/"> english</a>
+                    <a class="right" href="https://app.mail.qq.com/">手机邮箱</a>
+                    <a class="right" href="https://exmail.qq.com/?referrer=index_top">企业邮箱</a>
+
+                </div>
+                <!--logo和内容分开 不然不能正常排列-->
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="neirou">
+            <div class="wenzi">
+                <div class="bt">QQ邮箱，常联系!</div>
+                <div class="shi">
+                    到头来，
+                    <br>
+                    我们记住的，
+                    <br>
+                    不是敌人的攻击，
+                    <br>
+                    而是朋友的沉默。
+                    <br>
+                    ——马丁·路德·金
+                    <br>
+                    插画来自丑丑(两岁)>
+                </div>
+
+            </div>
+            <div class="tupian ">
+                <img src="https://rescdn.qqmail.com/zh_CN/htmledition/images/tg-mail20f1b0.gif" />
+            </div>
+                
+            
+            <div class="denglu">
+                <div class="hezi" >
+                    <div class="weixinqq">
+                       <div class="zi1">微信登录 </div>
+                       <div class="zi">QQ登录</div>
+                       
+
+                    </div>
+                    <div class="sr1">
+                        <input class="sr">
+                       <input class="sr"> 
+
+                    </div>
+                   <p class="zd"><input class="sr3">下次自动登录</p> 
+                   <div class="my-button">
+                       登录
+                   </div>
+                   <div class="sm">
+                       扫码快捷登录
+                   </div>
+                   <div class="zh">
+                       <div>忘了密码？</div>
+                       <di>注册新账号</di>
+                   </div>
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            
+                    
+                   
+                
+                
+>
+            
+                
+                   
+                
+               
+            
+            
+               
+                
+    
+           
+
+
+            
+            
+            
+                
+
+
+                
+                
+            
+
+
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
