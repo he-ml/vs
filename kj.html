@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        head,
+        body {
+            width: 100%;
+            height: 600px;
+        }
+
+        body {
+            background: url(../img/src=http___img15.3lian.com_2015_f1_77_d_97.jpg&refer=http___img15.3lian.jpg) no-repeat;
+            background-size: 100% 625px;
+
+        }
+
+        .box {
+            position: fixed;
+            /*position相对定位 fixed窗口 */
+            top: 30%;
+            /*距离窗口上边的距离30%的高度*/
+            left: 40%;
+            /*距离窗口左边的距离40%的高度*/
+
+            width: 200px;
+            height: 200px;
+            perspective: 1000px；
+                /*景深 */
+
+
+        }
+
+        .warp {
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            /*warp中的子元素都具有3D效果*/
+            /*变形属性；transform的旋转rotate、扭曲skew、缩放scale和移动translate */
+            position: relative;
+            /*相对定位  绝对定位来找相对定位*/
+            transform: rotateX(-30deg)rotateY(30deg);
+            /*旋转的先后位置角度不同效果不一样 rotate旋转角度单位deg*/
+            animation: xuanzhuan 10s infinite linear;
+            /*infinite无限循环  linear匀速运动*/
+        }
+
+        @keyframes xuanzhuan {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateX(360deg)rotateY(360deg);
+
+            }
+
+        }
+
+
+        .warp div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /*绝对定位  */
+            opacity: 1;
+            /*opacity透明的意思 取值0-1 越大越不透明*/
+        }
+
+
+        .warp div img {
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .top {
+            transform: translateY(-100px) rotateX(90deg);
+            /*变形transform  平移translate 沿y垂直轴平移向上是负值 同一张图片的旋转
+            属性要写在同一行 如平移旋转等*/
+
+        }
+
+        .box:hover
+
+        /* 当鼠标移动到盒子上时 盒子的变形状态位置 translate平移距离*/
+        .top {
+            transform: translateY(-200px) rotateX(90deg);
+            transition: 1s;
+            /*transition过度的意思 有动画过程的时间比如拿起来 放下去的过程*/
+        }
+
+        .bottom {
+            transform: translateY(100px)rotateX(-90deg);
+            transition: 2s;
+        }
+
+        .box:hover .bottom {
+            transform: translateY(200px)rotateX(-90deg);
+            transition: 2s;
+        }
+
+        .right {
+            transform: translateX(100px)rotateY(90deg)
+        }
+
+        .box:hover .right {
+            transform: translateX(200px)rotateY(90deg);
+            transition: 2s;
+
+        }
+
+        .left {
+            transform: translateX(-100px)rotateY(-90deg)
+        }
+
+        .box:hover .left {
+            transform: translateX(-200px)rotateY(-90deg);
+            transition: 2s;
+        }
+
+        .back {
+            transform: translateZ(-100px)
+        }
+
+        .box:hover .back {
+            transform: translateZ(-200px);
+            transition: 2s;
+        }
+
+        .front {
+            transform: translateZ(100px)
+                /*z轴是前后的轴 单位px front前面*/
+        }
+
+        .box:hover .front {
+            transform: translateZ(200px);
+            transition: 2s;
+        }
+
+        .warp span {
+            display: block;
+            /*块元素*/
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+
+        }
+
+        .warp span img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .six {
+            transform: translateY(-50px) rotateX(90deg);
+
+        }
+
+        .five {
+            transform: translateY(50px)rotateX(-90deg)
+        }
+
+        .furo {
+            transform: translateX(50px)rotateY(90deg)
+        }
+
+        .three {
+            transform: translateX(-50px)rotateY(-90deg)
+        }
+
+        .two {
+
+            transform: translateZ(-50px)
+        }
+
+        .one {
+            transform: translateZ(50px)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="warp">
+            <!--每个图片都是单独的盒子-->
+            <div><img class="front" src="../img/kj.jpg"></div>
+            <div><img class="back" src="../img/kj.jpg">
+            </div>
+            <div><img class="left" src="../img/kj.jpg">
+            </div>
+            <div><img class="right" src="../img/kj.jpg"></div>
+            <div><img class="bottom" src="../img/kj.jpg">
+            </div>
+            <div><img class="top" src="../img/kj.jpg">
+            </div>
+
+            <span class="one">
+                <img src="../img/kj.jpg">
+            </span>
+            <span class="two">
+                <img src="../img/kj.jpg">
+            </span>
+            <span class="three">
+                <img src="../img/kj.jpg">
+            </span>
+            <span class="furo">
+                <img src="../img/kj.jpg">
+            </span>
+            <span class="five">
+                <img src="../img/kj.jpg">
+            </span>
+            <span class="six">
+                <img src="../img/kj.jpg">
+            </span>
+
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

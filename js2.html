@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+     
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box"></div>
+
+
+</body>
+<script>         
+    //在当前文档获得节点：getelementby by通过id去改变节点div中的属性    
+    var box=document.getElementById("box")   //格式 var xx=document.getElementBYiId("")     /*let es6中的变量格式 */          
+    box.style.background = "blue" //     box.style.+要更改和添加的属性
+    box.style.color="red"
+    
+    var xx=document.createElement("h1")//creteelement创造节点xx h标题的意思
+    box.appendChild(xx);//把xx节点加入box div中
+    xx.innerHTML="哈哈哈 "//innerHTML标题内容
+    xx.style.background="white"//定义标题内属性 格式：xx.style.background=“”格式 属性 中间每一个单独的单词都要用.隔开 = 属性内容用“”；
+    xx.style.width="100px"
+    xx.style.height="40px"
+    xx.style.margin="auto"  
+    //console.log(h1)只有在函数种才需要打印内容 直接加（）；
+
+</script>
+
+
+</html>

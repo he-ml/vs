@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+</body>
+<script>
+    /* var a=prompt("请输入姓名")
+     var b =prompt("请输入课程")
+      document.write( "张三丰"+a+"张无忌"+b+"灭绝师太")//没有声明的字符串 也就是汉字英语等 在连接中要用“”号包起来 如果最外面的有双引号，里面的就要用单引号包起来*/
+    /* var a = prompt()
+     if (a > 150) { document.write("没有") }
+     else if (a < 150 && a > 90) {
+         document.write("有奖励，没作业")
+     }
+     else if (a > 80) {
+         document.write("有奖励，有练习册一本")
+     } else if (a > 70) {
+         document.write("练习册两本，没奖励")
+     } else { document.write("练习册五本") }//if语句可多条件的执行 满足条件的代码 和不满足条件的代码*/
+    /*for(var i=0 ;i<=101;i++){
+        document.write(i+1+",")
+    }*/
+    /*or (var i = 0; i < 10; i++) {
+        
+ 
+         for (var a = 0; a < 5; a++) {
+             document.write("你好");
+            
+         }
+         document.write("<br>");
+     };*/
+    /*for(var i=1;i<6;i++){
+        for(var a=0;a<i;a++){document.write("A")}
+        document.write("<br>")//for的双循环 内侧的值可以用外侧申明的值 如 i=1； i<6；a++ 那么内循环就可以用i的变量进行输出代码
+        //内侧每次循环的个数就外侧的的次数   直至循环结束
+
+    for (var i = 1; i < 6; i++) {
+        for (var a = 1; a <= (6 - i); a++) {// a i 都只是初始值 次数 从0开始 决定循环的条件是后面的比较
+            document.write("A")
+        }
+        document.write("<br>")//双循环内侧控制个数 外侧控制的是行数 
+    }*/
+    /* for (var e = 1; e <= 9; e++) {
+            for (var c = 1; c <=(10-i) ; c++) {
+                var b = e + "X" + c + "=" + (e * c) + "&nbsp;&nbsp;&nbsp;"//&nbsp；是空格的意思
+                document.write(b)
+            }
+            document.write("<br>")//用循环做算法 先把等式做出来 再把变量带进去
+        }*/
+
+
+    for (var i = 1; i <= 10; i++) {
+        if (i % 2 == 1) {
+            for (var a = 1; a <= 10; a++)
+                if (a % 2 == 1) {
+                    document.write('<span style="color: red;">你</span>');
+                }
+                else {
+                    document.write('<span style="color: blue;">好</span>');
+
+                }
+        }               //在for循环中嵌套 if else语句   在if语句中在嵌套for循环  再在for循环中嵌套if else语句再在else中嵌套for循环中嵌套if else
+        else {
+            for (var a = 1; a <= 10; a++) {
+                if (a % 2 == 1) {
+                    document.write('<span style="color: blue;">你</span>');
+                } else {
+                    document.write('<span style="color: red;">好</span>');
+                }
+
+            }
+        }
+        document.write("<br>")
+    }
+
+   // <spen style="color: red;">你</spen>
+   // <spen style="color: blue;">好</spen> 文本用spen最好
+
+
+
+
+
+
+
+</script>
+
+
+</html>

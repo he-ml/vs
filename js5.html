@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 200px;
+            border: solid 1px black;
+        }
+        #box{
+            width: 80px;
+            text-align: center;
+        }
+        #www {
+            width: 80px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+          
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #ededed;
+          text-align: center;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div id="box1" >
+            <h id="box">设置</h>
+            <div id="www">
+                搜索设置
+                高级搜索
+                关闭预测
+                隐私设置
+                关闭热榜
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+     var box1 =document.getElementById("box1")
+    var box = document.getElementById("box");
+    var www = document.getElementById("www")//定义变量 调用变量 www 定义www的内容状态隐藏 再把它应用到的地方
+    www.style.display = "none"//声明变量定义属性
+
+    box.onmouseover = function () {//onmouseover 当鼠标放在上面时
+        box.style.color = "blue";
+        box.style.cursor = "pointer";//变小手指
+        www.style.display = ""//隐藏文本 调用之前的www属性
+
+
+    }
+    www.onmouseleave = function () {//onmouseout当鼠标离开文本时
+       
+        www.style.display = "none"//显示文本 调用之前的www属性
+    }
+    box1.onmouseleave=function(){//当鼠标离开盒子区域时
+        www.style.display = "none"
+    }
+
+    
+</script>
+<script>
+
+</script>
+
+</html>

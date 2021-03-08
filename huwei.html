@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 100%;
+        height: 800px;
+        margin: auto;
+
+    }
+
+    .kait {
+        width: 100%;
+        height: 80px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .di1 {
+        width: 15%;
+        height: 80px;
+
+
+    }
+
+    .logo {
+        width: 126px;
+        height: 36px;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+
+    .di0 {
+        width: 15%;
+        height: 80px;
+
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 80px;
+     
+    }
+
+    .di2 {
+        width: 40%;
+        height: 80px;
+
+        line-height: 80px;
+        font-size: 16pz;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 18PX;
+        color: darkgray;
+        text-align: left;
+
+
+
+    }
+
+    .di3 {
+        width: 285px;
+        height: 30px;
+        border-color: white;
+        border-radius: 20px;
+        margin-top: 20px;
+        background-color: silver;
+        border: 0;
+
+    }
+
+    .neir {
+        width: 100%;
+        height: 490px;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .hw {
+        width: 100%;
+        height: 490px;
+    }
+
+    .sp {
+        width: 100%;
+        height: 250px;
+        background-color: #cd5c5c;
+
+    }
+
+    .s1 {
+        width: 100%;
+        height: 50px;
+        background-color: #b22222;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+
+    }
+
+    .m1 {
+        width: 20%;
+
+        text-align: center;
+        line-height: 50px;
+
+    }
+
+    .m2 {
+        width: 20%;
+
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .m3 {
+        width: 20%;
+
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .m4 {
+        width: 20%;
+
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .m5 {
+        width: 20%;
+
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .o {
+        margin-top: 10px;
+        font-size: 5px;
+        height: 30px;
+    }
+
+    .s2 {
+        width: 100%;
+        height: 40px;
+
+    }
+
+    .s3 {
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .s4 {
+        width: 80%;
+        height: 140Px;
+        background-color: white;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        border-radius: 40px;
+    }
+
+    .s5 {
+        width: 40%;
+
+    }
+
+    .s6 {
+        width: 20%;
+
+    }
+
+    .s7 {
+        width: 40%;
+
+    }
+
+    .anniu1 {
+        width: 200px;
+        height: 30px;
+        background-color: #b22222;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+        margin-top: 50px;
+        margin-left: 90px;
+    }
+
+    .wenzi1 {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 100px;
+        color: black;
+    }
+
+    .anniu2 {
+        width: 200px;
+        height: 30px;
+        background-color: #b22222;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 50px;
+        margin-left: 5px;
+        color: white;
+    }
+
+    .wenzi2 {
+        font-size: 25px;
+        color: black;
+        margin-top: 20px;
+        margin-left: 20PX;
+    }
+
+    .anniu3 {
+        width: 250px;
+        height: 30px;
+        background-color: #b22222;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+        margin-top: 50px;
+        margin-left: 90px;
+
+    }
+
+    .wenzi3 {
+        font-size: 25px;
+        color: blacks;
+        margin-top: 20px;
+        margin-left: 170PX;
+
+    }
+
+    .sp2 {
+        width: 100%;
+        height: 220px;
+        background: #cd5c5c;
+    }
+
+    .f1 {
+        width: 80%;
+        height: 140Px;
+        background-color: #fff0f5;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        border-radius: 40px;
+
+    }
+
+
+    .f2 {
+        width: 31.3%;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .f3 {
+        width: 31.3%;
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .f4 {
+
+        width: 31.3%;
+
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    .st1 {
+        width: 2%;
+        height: 140px;
+        background-color: #cd5c5c;
+    }
+
+    .st2 {
+        width: 2%;
+        height: 140px;
+        background-color: #cd5c5c;
+    }
+
+    .fg1 {
+        width: 50%;
+        height: 140px;
+
+
+    }
+
+    .fg2 {
+        width: 50%;
+        height: 140px;
+
+
+    }
+
+    .tw1 {
+        font-size: 23px;
+        font-weight: 600;
+        color: #b22222;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .tw2 {
+        font-size: 20px;
+        color: #778899;
+        margin-left: 10px;
+    }
+
+    .tw3 {
+        width: 80%;
+        font-size: 18px;
+        font-weight: 500;
+        /*字体粗细*/
+        color: white;
+        border-radius: 20px;
+        background-color: #b22222;
+
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10px;
+
+    }
+
+    .mp {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .ys {
+        color: silver;
+        text-decoration: none;
+        /*去下划线*/
+        padding: 5px;
+        /*词语之间的间距*/
+    }
+
+    .MX {
+        color: white;
+        text-decoration: none;
+    }
+
+    .xh {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sp3 {
+        width: 100%;
+        height: 100%;
+        background-color: #cd5c5c;
+    }
+
+    .r1 {
+        width: 100%;
+        height: 80px;
+        background-color: #cd5c5c;
+    }
+
+    .r2 {
+        width: 100%;
+        height: 40px;
+        background-color: #cd5c5c;
+    }
+
+    .b1 {
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 80px;
+        color: white;
+        background-color: #cd5c5c;
+        letter-spacing: 10px;
+
+    }
+
+    .b2 {
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        letter-spacing: 10px;
+        /*字体之间的间隔*/
+        background-color: #cd5c5c;
+
+
+    }
+
+    .o1 {
+        width: 100%;
+        height: 490px;
+        background-color: #cd5c5c;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .o2 {
+        width: 90%;
+        height: 480px;
+        background-color: #cd5c5c;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .c1 {
+        height: 480px;
+        width: 33%;
+
+    }
+
+    .c2 {
+        height: 480px;
+        width: 1%;
+
+    }
+
+    .o3 {
+        width: 100%;
+        height: 9px;
+        background-color: black;
+    }
+
+    .dx {
+        width: 100%;
+        height: 480px;
+    }
+
+    .zt {
+        width: 100%;
+        height: 480px;
+    }
+
+    .zc {
+        width: 100%;
+        height: 150px;
+        background-color: #cd5c5c;
+
+
+    }
+
+    .zc2 {
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 150px;
+        color: white;
+        background-color: #cd5c5c;
+        letter-spacing: 10px;
+
+    }
+
+    .zl {
+        width: 100%;
+        height: 300px;
+        background-color: #cd5c5c;
+    }
+
+    .zl2 {
+        width: 92%;
+        height: 100%;
+        background-color: #cd5c5c;
+        margin-left: 70px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dt {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="kait">
+            <div class="di1"><img class="logo"
+                    src="https://res.vmallres.com/pimages//sale/2018-11/WTDdguIWgNsNWtK0Q1Z3.png">
+
+            </div>
+            <div class="di0">|华为专区</div>
+
+
+            <div class="di2">
+                <h class="wenzi">
+                    <a class="ys" href="https://www.vmall.com/list-111" class="lz">手机</a>
+                    <a class="ys" href="https://www.vmall.com/list-291">笔记本</a>
+                    <a class="ys" href="https://www.vmall.com/list-243">平板&穿戴</a>
+                    <a class="ys" href="https://www.vmall.com/list-115"> 智能家居</a>
+                    <a class="ys" href="https://www.vmall.com/list-117 "> 配件</a>
+                    <a class="ys" href="https://sale.vmall.com/hwcompany.html">企业购</a>
+                </h>
+            </div>
+            <input class="di3">
+        </div>
+        <div class="neir">
+            <a href="https://sale.vmall.com/318.html?cid=10618#part-1"><img class="hw" src="../img/HW.png">
+            </a>
+        </div>
+        <div class="sp">
+            <div class="s1">
+                <div class="m1">
+                    <a class="MX" href="#热销推荐">热销推荐</a>
+                    <!--同一页面通过点击文字调到相应位置， 另一端《div id=“”》相同 文字内容来接，实现跳转》-->
+
+                </div>
+                <div class="o">|</div>
+                <div class="m2">
+                    <a class="MX" href="#10:00专场">10：00专场</a>
+                </div>
+                <div class="o">|</div>
+                <div class="m3">
+                    <a class="MX" href="#移动办公"> 移动办公</a>
+                </div>
+                <div class="o">|</div>
+                <div class="m4">
+                    <a class="MX" href="#运动健康">运动健康</a>
+                </div>
+                <div class="o">|</div>
+                <div class="m5">
+                    <a class="MX" href="#影音娱乐">影音娱乐</a>
+                </div>
+            </div>
+            <div class="s2"></div>
+            <div class="s3">
+                <div class="s4">
+
+                    <div class="s5">
+                        <div class="anniu1">
+                            好物提前定
+                        </div>
+                        <div class="wenzi1">
+                            2月25——28日
+                        </div>
+                    </div>
+
+
+
+                    <div class="s6">
+                        <div class="anniu2">
+                            开门红优惠
+                        </div>
+                        <div class="wenzi2">
+                            3月1日——2日
+                        </div>
+                    </div>
+                    <div class="s7">
+                        <div class="anniu3">
+                            智慧生活好物节
+                        </div>
+                        <div class="wenzi3">
+                            敬请期待
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="sp2">
+            <div class="f1">
+                <div class="f2">
+                    <div class="fg1">
+                        <div class="tw1">好物低至6折起</div>
+                        <div class="tw2">好物拼团</div>
+                        <div class="tw3">
+                            <a class="xh" href="https://sale.vmall.com/318.html?cid=10618#part-8">立即拼团</a>>
+                        </div>
+                    </div>
+                    <div class="fg2">
+                        <img class="mp" src="../hw2.png">
+                    </div>
+                </div>
+
+
+
+                <div class="st1"></div>
+
+                <div class="f3">
+                    <div class="fg1">
+                        <div class="tw1">以旧换新</div>
+                        <div class="tw2">最高补贴2021元</div>
+                        <div class="tw3">
+                            <a class="xh" href="https://sale.vmall.com/yjhxhwzc3.html">立即换新></a>
+                        </div>
+                    </div>
+                    <div class="fg2">
+                        <img class="mp" src="../hw3 (1).png">
+                    </div>
+                </div>
+
+                <div class="st2"></div>
+
+
+
+                <div class="f4">
+                    <div class="fg1">
+                        <div class="tw1">翻牌抽奖</div>
+                        <div class="tw2">赢国内飞机票</div>
+                        <div class="tw3">
+                            <a class="xh" href="https://sale.vmall.com/318.html?cid=10618#part-9">立即抽奖></a>
+                        </div>
+                    </div>
+                    <div class="fg2">
+                        <img class="mp" src="../hw4.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="sp3">
+
+            <div class="r1" id="热销推荐">
+                <div class="b1">热销推荐</div>
+
+            </div>
+            <div class="r2">
+                <div class="b2"> . 智慧生活 精选好物 .</div>
+            </div>
+            <div class="o1">
+                <div class="o2">
+                    <div class="c1">
+                        <a href="https://www.vmall.com/product/10086843317852.html#10086136605274"><img class="zt"
+                                src="../微信截图_20210227131825.png"></a>
+                    </div>
+                    <div class="c2"> </div>
+                    <div class="c1">
+                        <a href="https://www.vmall.com/product/10086857314109.html#10086161315646"><img class="zt"
+                                src="../微信截图_20210227135127.png"></a>
+                    </div>
+                    <div class="c2"></div>
+                    <div class="c1">
+                        <a href="https://www.vmall.com/product/10086190326596.html#10086331524175"><img class="zt"
+                                src="../微信截图_20210227135245.png"></a>
+                    </div>
+                    <div class="c2"></div>
+                    <div class="c1">
+                        <a href="https://www.vmall.com/product/10086726905036.html#10086749638947"><img class="zt"
+                                src="../微信截图_20210227131920.png"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="o1">
+                <div class="o2">
+                    <div class="c1">
+                        <a href="https://www.vmall.com/product/10086232069466.html#10086880383866"><img class="zt"
+                                src="../微信截图_20210227131936.png"></a>
+                    </div>
+                    <div class="c2"></div>
+                    <div class="c1">
+                        <a href="https://www.vmall.com/product/10086200489135.html#10086764453522"><img class="zt"
+                                src="../微信截图_20210227135144.png"></a>
+                    </div>
+                    <div class="c2"></div>
+                    <div class="c1">
+                        <a href="https://www.vmall.com/product/10086084939497.html#10086743531029"><img class="zt"
+                                src="../微信截图_20210227135159.png"></a>
+                    </div>
+                    <div class="c2"></div>
+                    <div class="c1">
+                        <a href="https://www.vmall.com/product/10086146060467.html#10086287739236"><img class="zt"
+                                src="../微信截图_20210227132005.png"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="zc" id="10:00专场">
+                <div class="zc2">10:00销售专场</div>
+            </div>
+
+            <div class="zl">
+                <div class="zl2">
+                    <a href="https://www.vmall.com/product/10086918242357.html"><img class="dt"
+                            src="../微信截图_20210227142733.png"></a>
+                </div>
+            </div>
+            <div>
+                <div class="o1">
+                    <div class="o2">
+                        <div class="c1">
+                            <a href="https://www.vmall.com/product/10086843317852.html#10086136605274"><img class="zt"
+                                    src="../微信截图_20210227144419.png"></a>
+                        </div>
+                        <div class="c2"></div>
+                        <div class="c1">
+                            <a href="https://www.vmall.com/product/10086517969606.html#10086002276663"><img class="zt"
+                                    src="../微信截图_20210227144428.png"></a>
+                        </div>
+                        <div class="c2"></div>
+                        <div class="c1">
+                            <a href="https://www.vmall.com/product/10086198383818.html#10086245826363"><img class="zt"
+                                    src="../微信截图_20210227144446.png"></a>
+                        </div>
+                        <div class="c2"></div>
+                        <div class="c1">
+                            <a href="https://www.vmall.com/product/10086652154452.html#10086678355808"><img class="zt"
+                                    src="../微信截图_20210227144459.png"></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

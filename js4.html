@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:400px;
+           height: 200px; 
+           display: flex;
+           flex-direction: row;
+        }
+        .input{
+            width: 200px;
+            height: 40px;
+        }
+        #wenzi{
+            width: 102px;
+            height: 46px;
+            line-height: 40px;
+            background-color: blue;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            color:white;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <input class="input">
+        <div id="wenzi">百度一下</div>
+    </div>
+</body>
+<script>
+    var wenzi=document.getElementById("wenzi")
+    wenzi.onmouseover=function(){
+        wenzi.style.background="cornflowerblue"
+        wenzi.style.cursor = "pointer";
+    }
+    wenzi.onmouseout=function(){
+        wenzi.style.background="blue"
+    }
+    
+</script>
+</html>

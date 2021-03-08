@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+<script>
+    var box=document.getElementById("box");
+    box.onmouseover=function(){
+        //onclick 当鼠标点击时发生改变=function{里面是要改变的属性style}
+        //onmouseover 当鼠标放到盒子box时发生改变
+        //onmousout 当鼠标移出时发生改变
+        
+       box.style.width="400px";
+       box.style.height="400px";
+       box.style.background="black";
+    }
+</script>
+</html>
