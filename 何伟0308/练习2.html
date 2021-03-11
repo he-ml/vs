@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 800px;
+            height: 406px;
+            border: solid #ccc 1px;
+            overflow: hidden;
+
+        }
+
+        .box1 {
+            width: 200px;
+            height: 406px;
+            float: left;
+            position: relative;
+            transition: 1s;
+        }
+
+        .wenzi {
+            width: 100%;
+            height: 406px;
+            float: left;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+
+            color: white;
+            text-align: center;
+            line-height: 406px;
+            transition: 1s;
+        }
+
+        .box:hover .box1 {
+            width: 100px;
+        }
+
+        .box .box1:hover {
+            width: 500px;
+        }
+
+        .box .box1:hover .wenzi {
+            height: 60px;
+            line-height: 60px;
+        }
+
+        .wenzi:nth-child(2) {
+            bottom: 0;
+            left: 0;
+        }
+
+        .wenzi:nth-child(3) {
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <img src="./cts-1.jpg" alt="">
+            <div class="wenzi">图片标签</div>
+            <div class="wenzi">图片标签</div>
+        </div>
+        <div class="box1">
+            <img src="./cts-2.jpg" alt="">
+            <div class="wenzi">图片标签</div>
+            <div class="wenzi">图片标签</div>
+        </div>
+        <div class="box1">
+            <img src="./cts-3.jpg" alt="">
+            <div class="wenzi">图片标签</div>
+            <div class="wenzi">图片标签</div>
+        </div>
+
+        <div class="box1">
+            <img src="./cts-4.jpg" alt="">
+            <div class="wenzi">图片标签</div>
+            <div class="wenzi">图片标签</div>
+        </div>
+    </div>
+</body>
+
+</html>

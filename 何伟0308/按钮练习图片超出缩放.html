@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            vertical-align: middle;/*出去图片下边的间隙*/
+        }
+        .box{
+            width: 290px;
+            height: 207px;
+            border: solid #e5e5e5 1px;
+            margin:0 auto;
+            float: left;
+            margin-left: 10px;
+            
+        }
+        .wenzi{
+            width: 290px;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            font-size: 12px;
+           
+        }
+        .tpbox{
+            width: 290px;
+            height: 162px;
+            overflow: hidden;
+        }
+        .tpbox img{
+            transition: 1s;/*过渡效果一般加载到需要过度的初始元素下*/
+        }
+        .tpbox:hover img{
+            transform: scale(1.1);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="tpbox"><img src="./cts-210309141256885.png"></div>
+        <div class="wenzi">新型勒索软件WannaRen解密工具</div>
+    </div>
+    <div class="box">
+        <div class="tpbox"><img src="./cts-pic01.jpg"></div>
+        <div class="wenzi">周鸿祎：网络安全是数字化战略的“底座”</div>
+    </div>
+    <div class="box">
+        <div class="tpbox"><img src="./cts-pic02.gif"></div>
+        <div class="wenzi">360政企安全集团与上海普陀区战略签约</div>
+    </div>
+</body>
+</html>

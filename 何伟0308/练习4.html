@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xbox{
+            height: 40px;
+           width: 100%;
+           border-bottom:solid 6px red ;
+           
+        }
+        .box{
+            width: 100px;
+            height: 40px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          margin-left: 10px;
+          position: relative;
+          float: left;
+            
+
+        }
+        .bj1{
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+            text-align: center;
+            line-height: 40px;
+
+        }
+        .bj2{
+            width: 100px;
+            height: 40px;
+            background-color: #ccc;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+            text-align: center;
+            line-height: 40px;
+
+          
+           
+        }
+        .box .bj1{
+            transform-origin: bottom center;
+            transform: scale(0);
+        }
+        .box:hover .bj1{
+            transform: scale(1);
+            color: white;
+        
+        }
+        .box .bj2{
+            transform-origin: bottom center;
+            transform: scale(1);
+
+        }
+        .box:hover .bj2{
+            transform: scale(0);
+        }
+       
+        
+    </style>
+</head>
+<body>
+   <div class="xbox">
+    <div class="box">
+        <div class="bj2">HOME</div>
+        <div class="bj1">首页</div>
+    </div>
+    <div class="box">
+        <div class="bj2">ABOUT</div>
+        <div class="bj1"> 关于我们</div>
+    </div>
+    <div class="box">
+        <div class="bj2">PRODUCTS</div>
+        <div class="bj1"> 产品中心</div>
+    </div>
+    <div class="box">
+        <div class="bj2">SERVICE</div>
+        <div class="bj1"> 服务中心</div>
+    </div>
+    <div class="box">
+        <div class="bj2">CONCAT</div>
+        <div class="bj1"> 练习我们</div>
+    </div>
+
+   
+
+</body>
+</html>

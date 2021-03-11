@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 60px;
+            border: solid #b9b9b9 1px;
+            margin: auto;
+            text-align: center;
+            position: relative;
+            line-height: 60px;
+            margin-top: -1px;
+            transition: 0.5s;
+        }
+        .bj{
+            width:0px ;
+            height: 6px;
+            position: absolute;
+            top: 54px;
+            left: 0;
+            transition: 1s;
+            
+
+        }
+        .box:hover{
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+       .box:nth-child(1):hover .bj{
+           background-color: #e2cfd3;
+           width: 200px;
+       }
+       .box:nth-child(2):hover .bj{
+           background-color: #ceff76;
+           width: 200px;
+       }
+       .box:nth-child(3):hover .bj{
+           background-color: #eab87b;
+           width: 200px;
+       }
+       .box:nth-child(4):hover .bj{
+           background-color: #f8fc69;
+           width: 200px;
+          }  
+
+    </style>
+</head>
+<body>
+    <div class="box"><span style="color:#e2cfd3 ;">首页</span>
+        <div class="bj"></div>
+    </div>
+   
+    <div class="box"><span style="color: #ceff76;">关于我们</span>
+        <div class="bj"></div>
+    </div>
+    <div class="box"><spen style="color: #eab87b;">联系我们</spen>
+        <div class="bj"></div>
+    </div>
+    <div class="box"><spen style="color: #f8fc69;">加入我们</spen>
+        <div class="bj"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lian{
+            width: 100px;
+            height: 100px;
+            background-color: #e25d5d;
+            position: relative;
+            border-radius: 50%;
+        }
+        .yanjingbox{
+            width: 77px;
+            height: 16px;
+          
+            position: absolute;
+            top: 27px;
+            left: 11px;
+        }
+        .fang1{
+            width: 16px;
+            height: 16px;
+            
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-top:solid #7f2626 5px;
+            transform: rotate(18deg);
+
+        }
+        .yan1{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: -2px;
+            right: 3px;
+            background-color: #7f2626;
+            border-radius: 50%;
+            
+        }
+        .fang2{
+            width: 16px;
+            height: 16px;
+           
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-top:solid #7f2626 5px;
+            transform: rotate(-18deg);
+
+
+        }
+        .yan2{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: -2px;
+            right: 3px;
+            background-color: #7f2626;
+            border-radius: 50%;
+        }
+        .zui{
+            width: 19px;
+            height: 4px;
+            background-color: #7f2626;
+            position: absolute;
+            top: 64px;
+            left: 40px;
+        }
+        .lian:hover .yanjingbox{
+            margin-left: 5px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="lian">
+        <div class="yanjingbox">
+            <div class="fang1">
+                <div class="yan1"></div>
+            </div>
+            <div class="fang2">
+                <div class="yan2"></div>
+            </div>
+
+        </div>
+        <div class="zui"></div>
+        
+    </div>
+</body>
+</html>

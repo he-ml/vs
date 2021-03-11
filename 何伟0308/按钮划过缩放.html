@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 60px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 60px;
+            position: relative;
+            margin-top: 20px;
+            border: solid 1px #ccc;
+            overflow: hidden;/* 盒子中的元素超出时会隐藏超出部分 overflow:hidden*/
+            transition: 1s;
+        }
+        .bj{
+            width: 200px;
+            height: 60px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;/*该盒子到下一层*/
+            transition: transform 1s;/*只把想要过度的元素名称加到transition里面 1s*/
+        }
+        .box:nth-child(1) .bj{
+            opacity: 0;/*透明度0-1*/
+            transition: 1s;
+        }
+        .box:nth-child(1):hover .bj{
+            opacity: 1;
+        }
+        .box:hover{color: white;
+              
+        }
+        .box:nth-child(2) .bj{
+            transform: scale(0);/*从中间缩放*/
+        }
+        .box:nth-child(2):hover .bj{
+            transform: scale(1);
+        }
+        .box:nth-child(3) .bj{
+            transform: scalex(0);
+        }
+        .box:nth-child(3):hover .bj{
+            transform: scalex(1);/*x轴的中间像两边缩放*/
+        }
+        .box:nth-child(4) .bj{
+            transform: scaley(0);/*y轴的中间像上下缩放*/
+        }
+        .box:nth-child(4):hover .bj{
+            transform: scaley(1);
+        }
+        .box:nth-child(5) .bj{
+            transform-origin: top center;/*定义缩放的起始点 :水平方向 垂直方向;*/
+            transform: scale(0);/*缩放 (默认点在盒子中心)  */
+        }
+        .box:nth-child(5):hover .bj{
+            transform-origin: bottom center;
+            transform: scale(1);
+        }
+        .box:nth-child(6) .bj{
+            transform-origin:left top;
+            transform: scale(0);
+        }
+        .box:nth-child(6):hover .bj{
+            transform-origin: right bottom;
+            transform: scale(1);
+        }
+        .box:nth-child(7) .bj{
+            transform:  scale(0) rotate(0deg);/*旋转 单位 deg   transform有多个属性时用空格隔开*/
+            opacity: 0;
+            transition: 1s;/*如果有单独过渡时间需求 需要在该盒子中加入transition:时间 1s*/
+            
+        }
+        .box:nth-child(7):hover .bj{
+            transform:scale(1) rotate(360deg);
+            opacity: 1;
+        }
+        .box:nth-child(8) .bj{
+            transform-origin:left ;
+            transform: scalex(0);
+        }
+        .box:nth-child(8):hover .bj{
+            transform-origin: right ;
+            transform: scalex(1);
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="box">按钮
+        <div class="bj"></div>
+    </div>
+    <div class="box">按钮
+        <div class="bj"></div>
+    </div>
+    <div class="box">按钮
+        <div class="bj"></div>
+    </div>
+    <div class="box">按钮
+        <div class="bj"></div>
+    </div>
+    <div class="box">按钮
+        <div class="bj"></div>
+    </div>
+    <div class="box">按钮
+        <div class="bj"></div>
+    </div>
+    <div class="box">按钮
+        <div class="bj"></div>
+    </div>
+    <div class="box">按钮
+        <div class="bj"></div>
+    </div>
+   
+</body>
+</html>

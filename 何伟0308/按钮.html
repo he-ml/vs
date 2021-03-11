@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            height: 60px;
+            width: 200px;
+            background-color: #ff0000;
+            text-align: center;
+            line-height: 60px;
+            margin: auto;
+            font-size: 20px;
+            margin-top: 100px;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);/* a是透明度的值0-1*/
+            transition: 0.2s;/**/
+            color: white;
+            cursor: pointer;/*鼠标指针小手指*/
+            
+        }
+
+        .button:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.3) inset;
+        }/* box-shadow 是盒子阴影  （水平阴影 垂直阴影 模糊值 ps的 r g b a是透明度）（  inset内阴影 ） */
+        .button:active{/*当鼠标按下不抬起时*/
+           margin-top: 110px;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.3) inset;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button">按钮</div>
+</body>
+
+</html>

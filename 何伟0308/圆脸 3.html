@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lian {
+            width: 100px;
+            height: 100px;
+            background-color: #f2dd68;
+            position: relative;
+            border-radius: 50%;
+
+        }
+
+        .yanjinbox {
+            width: 68px;
+            height: 12px;
+
+            position: absolute;
+            top: 35px;
+            left: 17px;
+
+        }
+
+        .yanjin1 {
+            width: 11px;
+            height: 11px;
+            background-color: #995710;
+            float: left;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+
+            transition: 1s;
+        }
+
+        .yanjin2 {
+            width: 11px;
+            height: 11px;
+            background-color: #995710;
+            float: right;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: 1s;
+        }
+
+        .changfangx {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 58px;
+            left: 37px;
+            border-radius: 50%;
+            background-color: #995710;
+           
+            transition: 1s;
+
+        }
+
+        .lian:hover .yanjin1 {
+            animation: fada 1s linear;
+        }
+
+        .lian:hover .yanjin2 {
+            animation: fada 1s linear;
+        }
+
+        .lian:hover .changfangx {
+            animation: suoxiao 1s linear;
+        }
+
+        @keyframes fada {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes suoxiao {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(0.5);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="lian">
+        <div class="yanjinbox">
+            <div class="yanjin1"></div>
+            <div class="yanjin2"></div>
+        </div>
+        <div class="changfangx">
+
+
+        </div>
+    </div>
+</body>
+
+</html>

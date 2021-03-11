@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lian{
+            width: 100px;
+            height: 100px;
+            background-color: #f2dd68;
+            position: relative;
+            border-radius: 50%;
+
+        }
+        .yanjingbox{
+            width: 81px;
+            height: 26px;
+            position: absolute;
+         
+            top: 23px;
+            left: 10px;
+        }
+        .yanjing1{
+            width: 26px;
+            height: 26px;
+           
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .yanjing2{
+            width: 26px;
+            height: 26px;
+            
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .xin1{
+            width: 16px;
+            height: 16px;
+            background-color: #e25d5d;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: rotate(-60deg);
+        }
+        .xin2{
+            width: 16px;
+            height: 16px;
+            background-color:#e25d5d;
+            position: absolute;
+            right: -8px;
+            bottom: 0;
+            border-radius: 50%;
+        }
+        .xin3{
+            width: 16px;
+            height: 16px;
+            background-color:#e25d5d;
+            position: absolute;
+            right: 0;
+            top:  -8px;
+            border-radius: 50%;
+           
+        }
+        .xin4{
+            width: 16px;
+            height: 16px;
+            background-color: #e25d5d;
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+            transform: rotate(70deg);
+        }
+            
+        .xin5{
+            width: 16px;
+            height: 16px;
+            background-color:#e25d5d;
+            position: absolute;
+            left: -8px;
+            top:  0;
+            border-radius: 50%;
+        }
+         .xin6{
+            width: 16px;
+            height: 16px;
+            background-color:#e25d5d;
+            position: absolute;
+            right: 0;
+            top:  -8px;
+            border-radius: 50%;
+            
+         }
+         .changfangx{
+             width: 36px;
+             height: 18px;
+             
+             position: absolute;
+             top: 42px;
+             left: 21px;
+             overflow: hidden;
+         }
+         .zui{
+             width: 36px;
+             height: 36px;
+             background-color: #995710;
+             border-radius: 50%;
+             position: absolute;
+             left: 0;
+             top:-18px ;
+             overflow: hidden;
+         }
+         .shetou{
+             width: 18px;
+             height: 18px;
+             background-color: #d8aa2b;
+             position: absolute;
+             left: 9px;
+             bottom: -9px;
+             border-radius: 50%;
+         }
+         .lian:hover .yanjing1{
+             animation: fsuo infinite 0.5s linear ;
+         }
+         .lian:hover .yanjing2{
+             animation: fsuo infinite 0.5s linear ;
+         }
+     @keyframes fsuo{
+         0%{
+             transform: scale(1);
+         }
+         50%{
+            transform: scale(1.2);
+         }
+         100%{
+            transform: scale(1);
+         }
+     }
+    </style>
+</head>
+<body>
+    <div class="lian">
+        <div class="yanjingbox">
+            <div class="yanjing1">
+                <div class="xin1">
+                    <div class="xin2"></div>
+                    <div class="xin3"></div>
+                </div>
+            </div>
+            <div class="yanjing2">
+                <div class="xin4">
+                  <div class="xin5"></div>
+                  <div class="xin6"></div>
+                </div>
+            </div>
+            <div class="changfangx">
+                <div class="zui">
+                    <div class="shetou"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

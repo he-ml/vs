@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 220px;
+            height: 220px;
+            border: solid #000301 5px;
+            margin: 20px;
+            float: left;
+            transition: 1s;
+            overflow: hidden;
+            position: relative;
+        }
+
+        img {
+            transition: 1s;
+        }
+
+        .box:nth-child(1):hover img {
+            transform: scale(1.2);
+        }
+
+        .wenzi1 {
+            width: 220px;
+            height: 220px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            line-height: 220px;
+            color: white;
+            transition: 1s;
+        }
+
+        .box:nth-child(2) .wenzi1 {
+            transform: scale(0) rotate(360deg);
+            opacity: 0;
+        }
+
+        .box:nth-child(2):hover .wenzi1 {
+            transform: scale(1) rotate(0);
+            opacity: 1;
+        }
+
+        .box:nth-child(3) .wenzi1 {
+            transform-origin: left top;
+        }
+
+        .box:nth-child(4) .wenzi1 {
+            transform-origin: right top;
+        }
+
+        .box:nth-child(5) .wenzi1 {
+            transform-origin: right bottom;
+        }
+
+        .box:nth-child(6) .wenzi1 {
+            transform-origin: left bottom;
+        }
+
+        .box .wenzi1 {
+            transform: rotate(90deg);
+        }
+
+        .box:hover .wenzi1 {
+            transform: rotate(0);
+        }
+
+        .bj {
+            width: 220px;
+            height: 60px;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            text-align: center;
+            line-height: 60px;
+            transition: 1s;
+            color: white;
+        }
+
+        .box:nth-child(7) .bj {
+            left: -220px;
+            bottom: 0;
+        }
+
+        .box:nth-child(7):hover .bj {
+            left: 0;
+        }
+
+        .box:nth-child(8) .bj {
+            right: -200px;
+            bottom: 0;
+        }
+
+        .box:nth-child(8):hover .bj {
+            right: 0;
+        }
+
+        .box:nth-child(9) .bj {
+            left: 0;
+            bottom: -60px;
+        }
+
+        .box:nth-child(9):hover .bj {
+            bottom: 0;
+        }
+
+        .box:nth-child(10) .bj {
+            top: -60px;
+            left: 0;
+        }
+
+        .box:nth-child(10):hover .bj {
+            top: 160px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="./微信图片_20210309194810.jpg" alt="">
+    </div>
+    <div class="box">
+        <img src="./微信图片_20210309194810.jpg" alt="">
+        <div class="wenzi1">请关注我</div>
+    </div>
+    <div class="box">
+        <img src="./微信图片_20210309194810.jpg" alt="">
+        <div class="wenzi1">请关注我</div>
+    </div>
+    <div class="box">
+        <img src="./微信图片_20210309194810.jpg" alt="">
+        <div class="wenzi1">请关注我</div>
+    </div>
+    <div class="box">
+        <img src="./微信图片_20210309194810.jpg" alt="">
+        <div class="wenzi1">请关注我</div>
+    </div>
+    <div class="box">
+        <img src="./微信图片_20210309194810.jpg" alt="">
+        <div class="wenzi1">请关注我</div>
+    </div>
+    <div class="box">
+        <img src="./微信图片_20210309194810.jpg" alt="">
+        <div class="bj">请关注我</div>
+    </div>
+    <div class="box">
+        <img src="./微信图片_20210309194810.jpg" alt="">
+        <div class="bj">请关注我</div>
+    </div>
+    <div class="box">
+        <img src="./微信图片_20210309194810.jpg" alt="">
+        <div class="bj">请关注我</div>
+    </div>
+    <div class="box">
+        <img src="./微信图片_20210309194810.jpg" alt="">
+        <div class="bj">请关注我</div>
+    </div>
+</body>
+
+</html>

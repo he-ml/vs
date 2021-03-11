@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            border: solid #ccc 1px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            animation: bagua 2s infinite linear;
+            margin: 0 auto;
+            margin-top: 100px;
+            
+        }
+        .bj1{
+            width: 150px;
+            height: 300px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .bj2{
+            width: 150px;
+            height: 300px;
+            background-color: black;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .wy1{
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left:75px;
+            border-radius: 50%;
+
+
+        }
+        .wy2{width: 150px;
+            height: 150px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 75px;
+            border-radius: 50%;
+
+        }
+        .xy1{
+             width: 40px;
+             height: 40px;
+             position: absolute;
+             top: 55px;
+             left: 55px;
+             background-color: white;
+             border-radius: 50%;
+        }
+        .xy2{
+             width: 40px;
+             height: 40px;
+             position: absolute;
+             top: 55px;
+             left: 55px;
+             background-color: black;
+             border-radius: 50%;
+        }
+        @keyframes bagua{
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="bj1"></div>
+        <div class="bj2"></div>
+        <div class="wy1">
+            <div class="xy1"></div>
+        </div>
+        <div class="wy2">
+            <div class="xy2"></div>
+        </div>
+    </div>
+</body>
+</html>

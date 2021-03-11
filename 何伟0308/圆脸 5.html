@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lian{
+            width: 100px;
+            height: 100px;
+            background-color: #f2dd68;
+            position: relative;
+            border-radius: 50%;
+        }
+        .yanjinbox{
+            width: 68px;
+            height: 12px;
+           
+            position: absolute;
+            top: 35px;
+            left: 17px;
+        }
+        .yanjin1{
+            width: 11px;
+            height: 11px;
+            background-color: #995710;
+            float: left;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            transition: 1s;
+        }
+        .yanjin2{
+            width: 11px;
+            height: 11px;
+            background-color: #995710;
+            float: right;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .changfangx{
+            width: 74px;
+            height: 44px;
+            position: absolute;
+            top:58px ;
+            left: 14px;
+            overflow: hidden;
+            
+            
+        }
+        .zui{
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            position: absolute;
+            top: -35px;
+            left: 6px;
+            border: solid #995710  4px;
+        }
+       .lian:hover .yanjin1{
+           animation: daxiao 1s  linear;
+       }
+       .lian:hover .yanjin2{
+           animation: daxiao 1s  linear;
+       }
+        @keyframes   daxiao{
+            0%{
+                height: 11px;
+            }
+            50%{
+                height: 1px;
+            }
+            100%{height: 11px;
+
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="lian">
+        <div class="yanjinbox">
+            <div class="yanjin1"></div>
+            <div class="yanjin2"></div>
+        </div>
+        <div class="changfangx">
+            <div class="zui">
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

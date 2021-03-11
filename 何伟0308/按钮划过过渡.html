@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height:60px;
+            border: solid  #ccc 1px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 60px;
+            margin: auto;
+            margin-top: 10px;
+            color: #520000;
+            position: relative;/* 相对定位*/
+            transition: 1s;
+        }
+        .bj{
+            width:0;
+            height: 60px;
+            background-color: red;
+            position: absolute;/*fixed 固定定位 absolute 绝对定位*/
+            left: 0;
+            top: 0;
+            z-index: -1;/*改变层级顺序 放在下面一层 -1 等等*/
+            transition: 1s;/*过度transition :时间*/
+        }
+        .box:hover .bj{
+            width: 200px;
+        }
+        .box:hover{
+            color: white;
+        }
+        .box:nth-child(2) .bj{/* nth-child() 该盒子的第2相同的盒子 也就是定义和更改第二个相同盒子里面的元素*/
+            width: 200px;
+            height: 0;
+        }
+        .box:nth-child(2):hover .bj{
+            width: 200px;
+            height: 60px;
+        }
+        .box:nth-child(3) .bj{
+            width: 0;
+            height: 0;
+        }
+        .box:nth-child(3):hover .bj{
+            width: 200px;
+            height: 60px;
+        }
+       
+
+    </style>
+
+</head>
+<body>
+    <div  class="box">按钮
+        <div class="bj"></div>
+    </div>
+    <div  class="box">按钮
+        <div class="bj"></div>
+    </div>
+    <div  class="box">按钮
+        <div class="bj"></div>
+    </div>
+    
+</body>
+</html>
